@@ -7,6 +7,17 @@ public class CavaloTeste extends animalTeste{
 		
 	}
 	
+	public CavaloTeste() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	
+	public String toString(){
+		return "Cavalo..." + super.toString();
+	}
+	
+	
 	private String correr;
 
 	public String getCorrer() {
@@ -15,6 +26,10 @@ public class CavaloTeste extends animalTeste{
 
 	public void setCorrer(String correr) {
 		this.correr = correr;
+		
+	}
+	public String getSom() {
+		return "\nSom do animal"+ super.getSom();
 	}
 	
 }

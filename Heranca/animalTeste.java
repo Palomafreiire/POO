@@ -1,6 +1,6 @@
 package Heranca;
 
-public class animalTeste {
+public abstract class animalTeste {
 		
 		private String nome;
 		private int idade;
@@ -13,7 +13,13 @@ public class animalTeste {
 			this.som = som;
 		}
 		
+		public abstract String imprimir();
 		
+		@Override
+		
+		public String toString() {
+			return "\nO nome do animal" + nome+ "A idade do animal: "+idade+ "O som que ele emite: "+som;
+		}
 		
 		public void som() {
 			System.out.println("\nEmitindo som....");
@@ -31,8 +37,8 @@ public class animalTeste {
 			return idade;
 		}
 
-		public void setIdade(int idade) {
-			this.idade = idade;
+		public void setIdade(int string) {
+			this.idade = string;
 		}
 
 		public String getSom() {
@@ -41,6 +47,12 @@ public class animalTeste {
 
 		public void setSom(String som) {
 			this.som = som;
+		}
+
+
+		public String getCorrer() {
+			
+			return null;
 		}
 		
 		
