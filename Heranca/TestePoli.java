@@ -1,25 +1,31 @@
 package Heranca;
 
+import java.util.Scanner;
+
 public class TestePoli {
 	
 		public static void main (String args[])
 		{
-		CavaloTeste cavalo = new CavaloTeste();
-		cachorroTeste cachorro = new cachorroTeste();
-		BichoPreguicaTeste bichoPreguica = new BichoPreguicaTeste();
+		Scanner ler = new Scanner(System.in);
+		CavaloTeste cavalo = new CavaloTeste("bichana", 5);
+		cachorroTeste cachorro = new cachorroTeste("suzy", 6);
+		BichoPreguicaTeste bichoPreguica = new BichoPreguicaTeste("soninho", 3);
 		
 		
-		cavalo.setNome("bichana");
-		cavalo.setSom("bruuuuu");
-		System.out.println(cavalo.imprimir());
 		
-		cachorro.setNome("Suzy");
-		cachorro.setSom("auauau");
-		System.out.println(cachorro.imprimir());
+		System.out.println();
+		cavalo.sobreAnimal();
 		
-		bichoPreguica.setNome("Soninho");
-		bichoPreguica.setSom("uhhhh");
-		System.out.println(bichoPreguica.imprimir());
+		
+		
+	
+		System.out.println();
+		cachorro.sobreAnimal();
+	
+		
+		System.out.println();
+		bichoPreguica.sobreAnimal();
+		
 		
 		
 	

@@ -2,34 +2,18 @@ package Heranca;
 
 public class CavaloTeste extends animalTeste{
 
-	public CavaloTeste(String nome, int idade, String som) {
-		super(nome, idade, som);
+	public CavaloTeste(String nome, int idade) {
+		super(nome, idade);
 		
-	}
-	
-	public CavaloTeste() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	
-	public String toString(){
-		return "Cavalo..." + super.toString();
-	}
-	
-	
-	private String correr;
-
-	public String getCorrer() {
-		return correr;
-	}
-
-	public void setCorrer(String correr) {
-		this.correr = correr;
+	void ani(String imprimir) {
+		System.out.println("Correndo.....");
 		
 	}
-	public String getSom() {
-		return "\nSom do animal"+ super.getSom();
-	}
+
 	
+
+
 }

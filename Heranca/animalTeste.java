@@ -1,30 +1,33 @@
 package Heranca;
 
 public abstract class animalTeste {
-		
+		// atributos
 		private String nome;
 		private int idade;
 		private String som;
 		
-		public animalTeste (String nome, int idade,String som)
+		//construtor
+		
+		public animalTeste (String nome, int idade)
 		{
 			this.nome = nome;
-			this.idade = idade;
-			this.som = som;
+			this.idade = idade ;
+			
 		}
 		
-		public abstract String imprimir();
+		//modo abstrato
+		 abstract void ani (String imprimir);
 		
-		@Override
+		// metodos (comportamentos)
+		 
+		public void sobreAnimal() {
+			System.out.println("O nome é: "+ nome + " E sua idade é: "+ idade);
+			}
 		
-		public String toString() {
-			return "\nO nome do animal" + nome+ "A idade do animal: "+idade+ "O som que ele emite: "+som;
-		}
 		
-		public void som() {
-			System.out.println("\nEmitindo som....");
-		}
 
+		// ja entro com os gets e sets
+		
 		public String getNome() {
 			return nome;
 		}
@@ -50,11 +53,7 @@ public abstract class animalTeste {
 		}
 
 
-		public String getCorrer() {
-			
-			return null;
-		}
-		
+	
 		
 		
 		
